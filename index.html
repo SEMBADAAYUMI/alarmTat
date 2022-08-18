@@ -11,17 +11,17 @@
   <body>
     <section>
       <div id="clock"></div>
-
-      <div class="container d-flex justify-content-center align-items-center mt-5">
+      
+      <div class="controls container d-flex justify-content-center align-items-center">
+        <button onclick="setAlarm()" class="button set-alarm btn btn-primary mt-5">set alarm</button>
+        <button onclick="clearAlarm()" class="button clear-alarm btn btn-danger mt-5">clear alarm</button>
+      </div>
+      
+      <div class="container d-flex justify-content-center align-items-center mt-2">
         <input onchange="setAlarmTime(this.value)" type="datetime-local" name="alarmTime" />
       </div>
-
-      <div class="controls container d-flex justify-content-center align-items-center">
-        <button class="button set-alarm btn btn-primary mt-5">set alarm</button>
-        <button class="button clear-alarm btn btn-danger mt-5">clear alarm</button>
-      </div>
     </section>
-    <h1 id="teks" class="container d-flex justify-content-center align-self-center min-vh-50">waktu ujian</h1>
+    <!-- <h1 id="teks" class="container d-flex justify-content-center align-self-center min-vh-50">waktu ujian</h1> -->
 
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
